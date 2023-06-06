@@ -1,0 +1,18 @@
+.projects .project_container {
+  min-height: 75vh;
+  /* background-color: #f8f8f8; */
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.project_container h2 {
+  font-size: var(--fontsize_Heading);
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .projects .project_container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}

@@ -1,0 +1,72 @@
+.card {
+  background-color: #fff;
+  /* border: 1px solid red; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 2rem 0rem 0rem 0rem;
+  border-radius: 1rem;
+  text-align: center;
+  width: 450px;
+  height: 300px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.card_content {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.card_content p {
+  padding: 0.85rem;
+  /* padding-right: 2rem; */
+  line-height: 24px;
+}
+
+.card:hover .ico-circle {
+  transition: all 500ms ease;
+  color: #fff;
+  background-color: #0078ff;
+  box-shadow: 0 0 0 10px #cde1f8;
+}
+
+.card .ico-circle {
+  transition: all 500ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .ico-circle i {
+  line-height: 0;
+  font-size: 40px;
+}
+
+.card .s-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.4rem 0;
+}
+
+.card .s-description {
+  color: #4e4e4e;
+}
+
+.ico-circle {
+  height: 70px;
+  width: 70px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1.55;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 5px var(--secondary-color);
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 330px;
+    height: 330px;
+  }
+}

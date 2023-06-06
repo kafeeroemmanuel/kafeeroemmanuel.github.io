@@ -1,0 +1,76 @@
+.action {
+  border: none;
+  border-bottom: 4px solid var(--secondary-color);
+  background-color: #f8f8f8;
+  outline: none;
+  padding: 15px 22px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-right: 3rem;
+}
+
+.inaction {
+  border: none;
+  background-color: #f8f8f8;
+  outline: none;
+  padding: 15px 22px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #000;
+  margin-right: 3rem;
+}
+
+.gallery {
+  display: flex;
+  gap: 4rem;
+  /* border: 1px solid black; */
+}
+
+.personal_info {
+  max-width: 80%;
+  padding: 2rem 0rem 2rem 0rem;
+}
+
+.personal_info ul > li {
+  padding-bottom: 1.8rem;
+  line-height: 24px;
+}
+
+/* @media screen and (min-width: 992px) and (max-width: 1360px) {
+  .gallery {
+    padding-left: 5rem;
+    gap: 4rem;
+  }
+  .action,
+  .inaction {
+    padding: 15px 22px;
+    font-size: 16px;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    /* display: block; */
+    padding-left: 0rem;
+    gap: 0rem;
+    /* border: 1px solid red; */
+  }
+
+  .line {
+    border-bottom: 1px solid #bebebe;
+    max-width: 100%;
+    margin: 2rem;
+    /* white-space: nowrap; */
+  }
+  .action,
+  .inaction {
+    /* padding: 0px 12px 10px 0px; */
+    font-size: 1rem;
+    margin-right: 1rem;
+    padding: 9px 2px;
+  }
+  .personal_info {
+    max-width: 100%;
+    padding: 2rem 1rem 0rem 1rem;
+  }
+}

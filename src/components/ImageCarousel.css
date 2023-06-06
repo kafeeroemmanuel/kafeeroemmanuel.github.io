@@ -1,0 +1,33 @@
+.slider-item {
+  text-align: center;
+  width: 100%;
+  /* background-color: red; */
+  padding: 3rem 2rem 0rem 2rem;
+  /* border: 1px solid black; */
+}
+
+.slider-item img {
+  object-fit: contain;
+  max-height: 600px;
+  padding-bottom: 1rem;
+  /* width: 100vw; */
+}
+
+.slider-item-text {
+  padding-bottom: 2rem;
+  font-size: 1.5rem;
+  /* padding: 1rem; */
+}
+
+/* .carousel .control-dots {
+  border: 1px solid black;
+} */
+
+@media screen and (max-width: 940px) {
+  .carousel.carousel-slider .control-arrow {
+    display: none;
+  }
+  .carousel .control-dots {
+    display: none;
+  }
+}

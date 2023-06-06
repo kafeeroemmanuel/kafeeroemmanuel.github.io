@@ -1,0 +1,31 @@
+.services {
+  min-height: 70vh;
+  padding-top: 3rem;
+}
+
+.services h2 {
+  font-size: var(--fontsize_Heading);
+  text-align: center;
+}
+
+.content_Container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 4rem 5rem 2rem 9rem;
+  gap: 4rem;
+  /* border: 1px solid red; */
+}
+
+.service-ico {
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+}
+
+@media screen and (max-width: 768px) {
+  .content_Container {
+    flex-direction: column;
+    padding: 3rem 2rem 0rem 1.6rem;
+    margin: 0 auto;
+  }
+}
