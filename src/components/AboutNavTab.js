@@ -1,8 +1,8 @@
 import { Tab } from "@headlessui/react";
 import "./AboutNavTab.css";
-import React, { useEffect } from "react";
+import React from "react";
 
-function AboutNavTab({}) {
+function AboutNavTab() {
   return (
     <Tab.Group>
       <Tab.List>
