@@ -3,7 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Card.css";
 
-const Card = ({ icon }) => {
+const Card = ({ icon, title, description }) => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -15,12 +15,8 @@ const Card = ({ icon }) => {
       </div>
 
       <div className="card_content">
-        <h3>Web Development</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio omnis
-          ut, facilis consequatur obcaecati architecto ad. Deserunt ipsa in
-          natus error commodi inventore mollitia tempora tenetur.
-        </p>
+        <h3>{title}</h3>
+        <p>{description}</p>
       </div>
     </div>
   );

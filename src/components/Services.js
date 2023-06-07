@@ -1,22 +1,11 @@
 import React, { useEffect } from "react";
-import { BsBriefcase, BsSun, BsCodeSquare } from "react-icons/bs";
-import { FaMedapps, FaRegAddressCard } from "react-icons/fa";
-import { TbBuilding } from "react-icons/tb";
 import Card from "./Card";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Services.css";
+import { MY_SERVICEDATA } from "../constants/Servicedata";
 
 const Services = () => {
-  const icons = [
-    <BsBriefcase />,
-    <BsSun />,
-    <TbBuilding />,
-    <BsCodeSquare />,
-    <FaMedapps />,
-    <FaRegAddressCard />,
-  ];
-
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -26,8 +15,13 @@ const Services = () => {
       <div className="services_container">
         <h2>Services</h2>
         <div className="content_Container">
-          {icons.map((icon, index) => (
-            <Card key={index} icon={icon} />
+          {MY_SERVICEDATA.map((part) => (
+            <Card
+              key={part.id}
+              icon={part.icon}
+              title={part.title}
+              description={part.description}
+            />
           ))}
         </div>
       </div>

@@ -78,10 +78,13 @@ function AboutNavTab() {
                 kind of technology is of keen interest to me.
               </li>
               <li>
-                I enjoy watching movies, series documentairies, every once in a
-                while
+                I enjoy watching movies, series and documentaries, every once in
+                a while
               </li>
-              <li>Sleeping</li>
+              <li>
+                I also enjoy working in various teams to achieve a certain
+                objective and cover milestones.
+              </li>
             </ul>
           </div>
         </Tab.Panel>

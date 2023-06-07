@@ -81,7 +81,7 @@ const Contact = () => {
                 <BsLinkedin name="linkedIn" role="img" aria-label="linkedIn" />
               </a>
             </div>
-            <p className="text">linkedIn</p>
+            <p className="text">LinkedIn</p>
           </div>
         </div>
       </div>

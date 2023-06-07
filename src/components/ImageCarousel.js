@@ -19,15 +19,15 @@ function ImageCarousel() {
       onClickThumb={onClickThumb}
     >
       <div className="slider-item">
-        <img src="/Images/ema.jpg" alt="project 1" />
+        <img src="/Images/signum.png" alt="project 1" />
         <p className="slider-item-text">Project one</p>
       </div>
       <div className="slider-item">
-        <img src="/Images/ema.jpg" alt="project 2" />
+        <img src="/Images/ExpensesApp.png" alt="project 2" />
         <p className="slider-item-text">Project two</p>
       </div>
       <div className="slider-item">
-        <img src="/Images/emmak.jpg" alt="project 3" />
+        <img src="/Images/SK Foundation.png" alt="project 3" />
         <p className="slider-item-text">Project three</p>
       </div>
     </Carousel>
