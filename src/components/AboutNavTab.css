@@ -36,24 +36,27 @@
   line-height: 24px;
 }
 
-/* @media screen and (min-width: 992px) and (max-width: 1360px) {
-  .gallery {
-    padding-left: 5rem;
-    gap: 4rem;
-  }
+/* media query for laptop sizes */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   .action,
   .inaction {
-    padding: 15px 22px;
-    font-size: 16px;
+    margin-right: 0rem;
   }
-} */
+}
+
+/* media query for tablet sizes */
+@media screen and (min-width: 768px) and (max-width: 948px) {
+  .personal_info {
+    max-width: 90%;
+    padding: 2rem 3rem 0rem 3rem;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .gallery {
     /* display: block; */
     padding-left: 0rem;
     gap: 0rem;
-    /* border: 1px solid red; */
   }
 
   .line {

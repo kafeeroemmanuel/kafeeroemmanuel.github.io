@@ -16,7 +16,6 @@
   padding-top: 7rem;
   /* z-index: 1000; */
   text-align: center;
-  /* align-items: flex-start; */
 }
 
 .my_intro h1 {
@@ -50,11 +49,6 @@
   margin: 0 auto;
 } */
 
-/* .wavesContainer img {
-  width: 100vw;
-  height: 360px;
-} */
-
 .btn_container button {
   font-size: 1.1rem;
   padding: 0.6rem 1rem;
@@ -73,6 +67,60 @@
   border: 1px solid var(--secondary-dark);
 }
 
+/* media query for laptop sizes */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .hero .content {
+    padding: 8rem 3rem 4rem 3rem;
+  }
+
+  .my_intro {
+    padding-top: 2rem;
+  }
+  .my_intro h1 {
+    font-size: 42px;
+  }
+  .my_intro p {
+    font-size: 24px;
+  }
+  .my_intro p:nth-child(3) {
+    line-height: 40px;
+  }
+  .my_image img {
+    width: 360px;
+    height: 450px;
+  }
+}
+
+/* media query for tablet sizes */
+@media screen and (min-width: 768px) and (max-width: 948px) {
+  .hero .content {
+    /* flex-direction: column; */
+    padding: 10rem 3rem 0rem 3rem;
+  }
+  .my_intro {
+    padding-top: 2rem;
+  }
+  .my_intro h1 {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .my_intro p {
+    font-size: 24px;
+  }
+  .my_image img {
+    width: 360px;
+    height: 450px;
+  }
+  .btn_container {
+    margin: 0 auto;
+  }
+  .btn_container button {
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .hero {
     min-height: 80vh;
@@ -81,6 +129,10 @@
     flex-direction: column;
     justify-content: center;
     padding: 1rem 2rem 3rem 2rem;
+  }
+
+  .my_image {
+    margin: 0 auto;
   }
 
   .my_image img {

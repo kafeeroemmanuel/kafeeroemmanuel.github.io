@@ -1,22 +1,22 @@
 .about {
   background-color: #f8f8f8;
   margin: auto;
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 4rem 1rem 2rem 1rem;
   width: 100%;
-  min-height: 70vh;
+  min-height: 65vh;
   /* background-color: black; */
 }
 
 .about h1 {
   text-align: center;
   font-size: var(--fontsize_Heading);
+  padding-bottom: 2rem;
 }
 
 .about .aboutMe_container {
   display: flex;
-  padding: 2rem 4rem 0rem 9rem;
-  /* border: 1px solid red; */
-  gap: 6rem;
+  /* padding: 2rem 4rem 0rem 9rem; */
+  gap: 2rem;
 }
 
 .about .aboutMe_container img {
@@ -27,14 +27,37 @@
 }
 
 .image_aboutMe_container {
-  flex: 2;
+  /* flex: 2; */
   border: 1px solid var(--secondary-dark);
 }
 
 .about_navtab {
-  flex: 2.5;
+  /* flex: 2.5; */
   padding-top: 2rem;
   /* border: 1px solid var(--primary-dark); */
+}
+
+/* media query for laptop sizes */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  .about {
+    padding: 4rem 1rem 0rem 1rem;
+  }
+  .about .aboutMe_container img {
+    width: 460px;
+    height: 420px;
+  }
+}
+
+/* media query for tablet sizes */
+@media screen and (min-width: 768px) and (max-width: 948px) {
+  .about .aboutMe_container {
+    padding: 0rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .image_container {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -42,6 +65,9 @@
     flex-direction: column;
     padding: 0rem;
     gap: 0rem;
+  }
+  .image_container {
+    margin: 0 auto;
   }
   .about .aboutMe_container img {
     width: 350px;
